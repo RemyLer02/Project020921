@@ -1,0 +1,19 @@
+<!--<a style="cursor: pointer" (click)="exportexcel()">
+    <mat-icon> cloud_download</mat-icon>
+  </a>
+
+  <table id="excel-table"> 
+    <tr>       
+       <th>ContainerNo</th> 
+       <th>SelCondition</th>  
+       <th> ContainerCondition</th> 
+       <th>GateInDateTime</th>   
+    </tr>    
+    <tr *ngFor="let sup of Company">
+    // This is the binding part. 
+       <td>{{ sup.ContainerNo }}</td>  
+       <td>{{ sup.SelCondition }}</td> 
+       <td>{{ sup.ContainerCondition }}</td> 
+       <td>{{ sup.GateInDateTime }}</td> 
+    </tr> 
+</table>

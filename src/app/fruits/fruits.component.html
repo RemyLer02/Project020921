@@ -1,0 +1,40 @@
+<p>Rayon Fruits</p>
+
+
+<p-table [value]="fruits">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>id</th>
+            <th>Origine</th>
+            <th>Description</th>
+            <th>poids</th>
+            <th>uniteMesure</th>
+            <th></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-fruit>
+        <tr>
+            <td>{{fruit.id}}</td>
+            <td>{{fruit.Origine}}</td>
+            <td>{{fruit.Description}}</td>
+            <td>{{fruit.poids}}</td>
+            <td>{{fruit.uniteMesure}}</td>
+            <td><button pButton routerLink="/fruits/edit/:id" pRipple type="button" icon="pi pi-bell"
+                    class="p-button-rounded p-button-warning"></button>
+
+                <button pButton (click)="removeFruit(fruit.id)" pRipple type="button" icon="pi pi-times" id=Remove
+                    class="p-button-rounded p-button-danger"></button>
+            </td>
+        </tr>
+    </ng-template>
+</p-table>
+
+<div>
+    <button pButton routerLink="/fruits/add" pRipple type="button" id=Nouveau
+        class="p-button-rounded p-button-success">Nouveau</button>
+
+    <p-button styleClass="p-button-outlined" (click)="Back()">
+        <img alt="logo" src="assets/img/backbutton.jpg" style="width: 2rem" />
+        <span class="p-ml-2 p-text-bold"></span>
+    </p-button>
+</div>

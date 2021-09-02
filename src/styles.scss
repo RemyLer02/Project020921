@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+app-header {
+    order: 1;
+    flex: 0 1 100%;
+    background: #ffffff;
+  }
+
+
+  app-header,
+app-main,
+app-aside,
+app-footer {
+  padding: 20px;
+}

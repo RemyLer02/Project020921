@@ -1,0 +1,34 @@
+header {
+    height: auto;
+  }
+  
+  #container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: olivedrab;
+  }
+ 
+ 
+  
+  img {
+    width: 3%;
+    height: auto;
+    margin-left: 2px;
+  }
+  

@@ -1,0 +1,26 @@
+<div class="card" >
+    <form [formGroup]= "legumesForm">
+    <div class="p-fluid">
+        <div class="p-field">
+            <label for="Origine">Origine</label>
+            <input id="Origine" type="text" pInputText formControlName="Origine"> 
+        </div>
+        <div class="p-field">
+            <label for="Description">Description</label>
+            <input id="Description" type="text" pInputText formControlName="Description"> 
+        </div>
+        <div class="p-field">
+            <label for="poids">Poids</label>
+            <input id="poids" type="text" pInputText formControlName="poids"> 
+        </div>
+        <div class="p-field">
+            <label for="uniteMesure">Unite de Mesure</label>
+            <input id="uniteMesure" type="text" pInputText formControlName="uniteMesure"> 
+        </div>
+    </div>
+</form>
+</div>
+<div>
+<button pButton (click)="save()" pRipple label="Save" icon="pi pi-check"></button>
+<button pButton (click)="Cancel()" pRipple label="Cancel" icon="pi pi-times"></button>
+</div>
